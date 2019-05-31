@@ -16,6 +16,7 @@ class Scraper
   #     course.description = post.css("p").text
   #   end
   # end
+  end
   
     def print_courses
     self.make_courses
@@ -26,7 +27,6 @@ class Scraper
         puts "  Description: #{course.description}"
       end
     end
-  end
 end
 
 Scraper.new.get_page
