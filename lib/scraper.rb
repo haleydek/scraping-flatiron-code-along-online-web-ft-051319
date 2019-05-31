@@ -5,12 +5,11 @@ require 'pry'
 require_relative './course.rb'
 
 class Scraper
-  attr_reader :page
   
   def get_page
     html = open('https://learn-co-curriculum.github.io/site-for-scraping/courses')
     binding.pry
-    @page = Nokogiri::HTML(html)
+    page = Nokogiri::HTML(html)
   end
   
     def print_courses
