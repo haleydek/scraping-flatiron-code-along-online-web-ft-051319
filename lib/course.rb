@@ -14,7 +14,5 @@ class Course
     @@all.clear
   end
   
-  binding.pry
-  
 end
 
