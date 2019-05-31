@@ -11,7 +11,7 @@ class Scraper
     
     page.css(".post").each do |post|
       course = Course.new
-      title
+      title = post.css("h2")
   end
   
     def print_courses
